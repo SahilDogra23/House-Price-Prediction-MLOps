@@ -50,7 +50,7 @@ if st.button("🔍 Predict Price", use_container_width=True, type="primary"):
     }
 
     try:
-        response = requests.post("http://127.0.0.1:8001/predict", json=payload)
+        response = requests.post("https://house-price-api-9hmc.onrender.com/predict", json=payload)
         result = response.json()
         st.success(f"### Estimated House Price: {result['predicted_price']}")
         st.caption("This is an estimate based on 1990 California census data.")
