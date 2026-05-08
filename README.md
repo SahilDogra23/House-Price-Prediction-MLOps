@@ -78,6 +78,22 @@ uvicorn app:app --reload
 streamlit run streamlit_app.py
 ```
 
+## 🐳 Docker Deployment
+
+### Build the image
+```bash
+docker build -t house-price-api .
+```
+
+### Run the container
+```bash
+docker run -p 8000:8000 house-price-api
+```
+
+### Access the API
+Visit `http://127.0.0.1:8000/docs`
+
+
 ## 📁 Project Structure
 
 ```House_Price_Prediction/
