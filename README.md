@@ -93,6 +93,11 @@ docker run -p 8000:8000 house-price-api
 ### Access the API
 Visit `http://127.0.0.1:8000/docs`
 
+### Pull from Docker Hub
+```bash
+docker pull sahil2323dogra/house-price-api:v1
+docker run -p 8000:8000 sahil2323dogra/house-price-api:v1
+```
 
 ## 📁 Project Structure
 
