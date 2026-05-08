@@ -26,7 +26,7 @@ def train_model():
     y = df["price_log"]
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
-    model = RandomForestRegressor(n_estimators=200, random_state=42, max_features="log2")
+    model = RandomForestRegressor(n_estimators=50, random_state=42, max_features="log2", max_depth = 10)
     model.fit(X_scaled, y)
     os.makedirs("models", exist_ok=True)
     joblib.dump(model, "models/house_price_model.pkl")
