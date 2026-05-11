@@ -98,6 +98,12 @@ Visit `http://127.0.0.1:8000/docs`
 docker pull sahil2323dogra/house-price-api:v1
 docker run -p 8000:8000 sahil2323dogra/house-price-api:v1
 ```
+### Run complete app with Docker Compose
+```bash
+docker-compose up
+```
+- API runs at `http://127.0.0.1:8001/docs`
+- Frontend runs at `http://127.0.0.1:8502`
 
 ## 📁 Project Structure
 
